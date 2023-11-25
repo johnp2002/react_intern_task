@@ -158,10 +158,10 @@ export default function HeaderFooterLayout({ Component }) {
   };
 
   return (
-    <Box sx={{ display: "flex", width: "100vw", height: "100vh", overflow: "hidden" }}>
+    <Box className={`${open?'group':''}`} sx={{ display: "flex", width: "100vw", height: "100vh", overflow: "hidden" }}>
       <CssBaseline />
 
-      <CustomDrawer variant="permanent" open={open}>
+      <CustomDrawer variant="permanent" open={open} className={` ${open?'absolute ':'relative'}`}>
         <DrawerHeader>
           {!open ? (
             <IconButton onClick={handleDrawerOpen}>
@@ -244,7 +244,7 @@ export default function HeaderFooterLayout({ Component }) {
           </ListItem>
         </DrawerFooter>
       </CustomDrawer>
-      <div className="py-4 overflow-y-hidden " style={{ flexGrow: 1, background: "#f5f5f5" }}>
+      <div className={`py-4 overflow-y-hidden ${open?'blur-sm':''}`}  style={{ flexGrow: 1, background: "#f5f5f5" }}>
         {Component} 
       </div>
     </Box>

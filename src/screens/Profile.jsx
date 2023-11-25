@@ -57,17 +57,17 @@ export default function Profile() {
   return (
   <div 
   // style={{background:"linear-gradient(1deg,#7b24d2 30%, #9c27b0)"}}
-  className="text-lg flex items-center justify-center gap-10 h-full w-full " >
+  className="text-lg flex items-center justify-center gap-10 h-full w-auto p-4" >
   <div 
-  className="rounded-xl overflow-hidden py-6 px-5 shadow-xl grid items-center justify-center"   
-  style={{background:"rgba(255,255,255,0.5)",transform:"rotateZ(5deg)",backdropfilter:"blur(90px)",border:"2px solid white"}} 
+  className="rounded-xl w-full h-full md:w-auto md:h-auto  md:rotate-6 overflow-hidden py-6 px-0 md:px-5 shadow-xl md:grid flex items-center justify-center"   
+  style={{background:"rgba(255,255,255,0.5)",backdropfilter:"blur(90px)",border:"2px solid white"}} 
   >
   <div 
-  className="flex flex-col items-center justify-center gap-10 m-2 p-4 rounded-lg" 
-  style={{background:"rgba(255,255,255,0.3)",backdropFilter:"blur(80px)",transform:"rotateZ(-5deg)",border:"2px solid white"}}  
+  className="flex flex-col w-full items-center md:-rotate-6 justify-center gap-10 m-2 p-2 md:p-4 rounded-lg" 
+  style={{background:"rgba(255,255,255,0.3)",backdropFilter:"blur(80px)",border:"2px solid white"}}  
   >
-        <div className="text-5xl font-semibold "  >Account Details</div>
-        <div className="grid gap-4 w-[40vw]">
+        <div className="md:text-5xl font-semibold text-3xl tracking-tight  "  >Account Details</div>
+        <div className="grid gap-4 md:w-[40vw] w-full">
               <TextField
                 value={loginData?.user_name}
                 id="standard-basic"
@@ -130,8 +130,8 @@ export default function Profile() {
                 type={showPassword ? "text" : "password"}
               />
      
-              <div className='flex justify-end gap-x-4' >
-                <Button size="small" variant='contained' color='secondary' onClick={()=>{onUpdate()}}> Update </Button>
+              <div className='flex justify-center md:justify-end gap-x-4' >
+                <Button className="w-full md:w-auto h-14 md:h-8" size="small" variant='contained' color='secondary' onClick={()=>{onUpdate()}}> Update </Button>
               </div>
             </div>
             </div>

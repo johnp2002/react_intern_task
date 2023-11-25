@@ -1,0 +1,69 @@
+Folder PATH listing
+Volume serial number is 58C0-B943
+C:.
+   .DS_Store
+   .env
+   .eslintrc.cjs
+   .gitignore
+   GlobalConstants.js
+   index.html
+   output.txt
+   package-lock.json
+   package.json
+   README.md
+   vercel.json
+   vite.config.js
+   
++---public
+       vite.svg
+       
++---src
+       .DS_Store
+       App.css
+       App.jsx
+       HeaderFooterLayout.jsx
+       index.css
+       Loader.jsx
+       main.jsx
+       Url_Routes.jsx
+       
+    +---assets
+           animation_fail.json
+           animation_loading.json
+           animation_pass.json
+           lesson.jpeg
+           quiz.png
+           QuizLandingPage.webp
+           quizTime.webp
+           react.svg
+           
+    +---redux
+           action.js
+           actionTypes.js
+           reducer.js
+           root-reducer.js
+           store.js
+           
+    +---screens
+           Dashboard.jsx
+           Home.jsx
+           Login.jsx
+           MultiSelect.jsx
+           Profile.jsx
+           QuizListing.jsx
+           Users.jsx
+           
+        +---Quiz
+               CreateLesson.jsx
+               LessonIndex.jsx
+               LessonView.jsx
+               QuizPage.jsx
+               QuizResults.jsx
+               
+        +---statistics
+                BarchartAdmin.jsx
+                Barchart_user.jsx
+                Card.css
+                Card.jsx
+                DashboardRedirection.jsx
+                
